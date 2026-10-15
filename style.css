@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Roboto+Slab&display=swap');
+
+:root {
+    --fonte-textos: 'Roboto Slab', sans-serif;
+    --fonte-titulos: 'Mea Culpa', system-ui;
+    --cor-principal: #2c1a17;
+    --cor-secundaria: #d94f36;
+    --cor-fundo: #fcf9f5;
+}
+
+/* ==========================================
+   1. RESET
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-textos);
+    background-color: var(--cor-fundo);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   2. TITULOS
+   ========================================== */
+h2, h3 {
+    font-family: var(--fonte-textos);
+    color: var(--cor-principal);
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* ==========================================
+   3. HEADER
+   ========================================== */
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-family: var(--fonte-titulos);
+    font-size: 50px;
+    color: var(--cor-principal);
+}
+
+.logo .letra-inicial {
+    font-size: 50px;
+    margin-right: -4px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* ==========================================
+   4. HERO
+   ========================================== */
+.hero-container {
+    background-color: #f3eade;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.marca-principal {
+    font-family: var(--fonte-titulos);
+    font-size: 120px;
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--cor-principal);
+}
+
+/* ==========================================
+   5. CARDÁPIO
+   ========================================== */
+#cardapio {
+    padding: 50px 5%;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.cardapio-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.prato-item {
+    min-width: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    padding: 15px;
+}
+
+.prato-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    display: block;
+}
+
+/* ==========================================
+   6. QUANTIDADE
+   ========================================== */
+.quantidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantidade button {
+    background-color: #d35400;
+    color: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.quantidade button:hover {
+    background-color: #e67e22;
+}
+
+.contador {
+    font-weight: bold;
+    font-size: 18px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.total-item {
+    display: block;
+    margin-top: 6px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#total-geral {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.seletor-sabor {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.seletor-sabor label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.seletor-sabor select {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+
+/* ==========================================
+   7. FORMULÁRIO
+   ========================================== */
+#contato {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.campo-grupo {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--cor-principal);
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: var(--cor-fundo);
+}
+
+form button[type="submit"] {
+    width: 100%;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #1ebe57;
+}
+
+/* ==========================================
+   8. RODAPÉ
+   ========================================== */
+footer {
+    background-color: #f3eade;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ==========================================
+   9. RESPONSIVIDADE
+   ========================================== */
+@media (max-width: 1024px) {
+    .cardapio-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .cardapio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .marca-principal {
+        font-size: 70px;
+    }
+
+    form {
+        width: 95%;
+        padding: 20px;
+    }
+}

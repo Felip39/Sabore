@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saborê</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"><span class="letra-inicial">S</span>aborê</div>
+    <nav>
+      <ul>
+        <li><a href="#cardapio">Cardápio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero-container">
+      <h1 class="marca-principal">Saborê</h1>
+
+      <section class="hero">
+        <p>
+          Comida artesanal feita com amor e ingredientes locais. Sabor
+          autêntico que conforta o coração. Peça e receba nossa comida de casa
+          em sua casa.
+        </p>
+      </section>
+    </div>
+    <section id="sobre">
+      <h2>Nossa História</h2>
+      <div class="sobre-conteudo">
+        <p>
+          A <strong>Saborê</strong> nasceu na cozinha da nossa família, com o
+          desejo de resgatar o prazer de comer uma comida de verdade, feita
+          sem pressa e com ingredientes colhidos direto do produtor local.
+          Cada tempero, cada corte e cada processo respeita o tempo natural
+          dos alimentos, garantindo um sabor que você não encontra em produtos
+          industrializados.
+        </p>
+      </div>
+    </section>
+
+    <section id="cardapio">
+      <h2>Nosso Cardápio Artesanal</h2>
+      <p class="subtitulo">Feito à mão, com amor e sem conservantes</p>
+
+      <h3>Pratos Principais</h3>
+      <div class="cardapio-container">
+        <article class="prato-item">
+          <img src="./assets/Lasanha artesanal à bolonhesa.jpg"
+            alt="Lasanha artesanal à bolonhesa saindo do forno fumegante" />
+          <h3>Lasanha da Casa</h3>
+          <p>
+            Massa fresca artesanal, molho de tomates italianos cozido por 6
+            horas e muito queijo.
+          </p>
+          <span class="preco">R$ 45,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <article class="prato-item">
+          <img src="./assets/Nhoque.png" alt="Nhoque artesanal de batata com molho de tomate" />
+          <h3>Nhoque Artesanal de Batata</h3>
+          <p>Servido com molho de tomate fresco ou manteiga e sálvia.</p>
+          <span class="preco">R$ 35,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <article class="prato-item">
+          <img src="./assets/Escondidinho.png" alt="Escondidinho de carne de panela com purê de mandioca" />
+          <h3>Escondidinho de Carne de Panela</h3>
+          <p>Purê de mandioca cremoso com carne cozida lentamente.</p>
+          <span class="preco">R$ 40,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- PÃES -->
+      <h3>Pães</h3>
+      <div class="cardapio-container">
+        <article class="prato-item">
+          <img src="./assets/Focaccia.png" alt="Focaccia artesanal com alecrim" />
+          <h3>Focaccia Artesanal</h3>
+          <p>Com alecrim fresco e sal grosso.</p>
+          <span class="preco">R$ 15,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <article class="prato-item">
+          <img src="./assets/Pão partido ao meio.jpg"
+            alt="Pão de fermentação natural com casca crocante partido ao meio" />
+          <h3>Pão de Fermentação Natural (Sourdough)</h3>
+          <p>
+            Tradicional, crocante por fora e absurdamente macio por dentro.
+          </p>
+          <span class="preco">R$ 20,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <article class="prato-item">
+          <img src="./assets/Croissant.png" alt="Croissant Artesanal com Manteiga" />
+          <h3>Croissant Artesanal com Manteiga </h3>
+          <p>Massa folhada feita à mão, leve e amanteigada.</p>
+          <span class="preco">R$ 15,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- SALADAS -->
+      <h3>Saladas</h3>
+      <div class="cardapio-container">
+        <article class="prato-item">
+          <img src="./assets/SaladaGraos.png" alt="Salada de grãos frescos" />
+          <h3>Salada de Grãos</h3>
+          <p>Lentilha, grão-de-bico, tomate e ervas frescas.</p>
+          <span class="preco">R$ 25,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <article class="prato-item">
+          <img src="./assets/LegumesAssados.png" alt="Legumes assados com azeite e ervas" />
+          <h3>Legumes Assados</h3>
+          <p>Assados lentamente com azeite e ervas aromáticas.</p>
+          <span class="preco">R$ 25,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <article class="prato-item">
+          <img src="./assets/SaladaCaprese.png" alt="Salada Caprese Artesanal" />
+          <h3>Salada Caprese Artesanal</h3>
+          <p>Tomate fresco, muçarela de búfala e manjericão, regados com azeite extra virgem.</p>
+          <span class="preco">R$ 25,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- SOBREMESAS -->
+      <h3>Sobremesas</h3>
+      <div class="cardapio-container">
+        <article class="prato-item">
+          <img src="./assets/Pudim.png" alt="Pudim de leite condensado" />
+          <h3>Pudim de Leite</h3>
+          <p>Clássico, cremoso e irresistível.</p>
+          <span class="preco">R$ 30,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <article class="prato-item">
+          <img src="./assets/TortaMaca.png" alt="Torta rústica de maçã" />
+          <h3>Torta Rústica de Maçã</h3>
+          <p>Massa amanteigada com recheio de maçã caramelizada.</p>
+          <span class="preco">R$ 30,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <article class="prato-item">
+          <img src="./assets/Brownie.png" alt="Brownie de Chocolate 70%" />
+          <h3>Brownie de Chocolate 70%</h3>
+          <p>Textura macia por dentro e crocante por fora, feito com cacau nobre e sem conservantes.</p>
+          <span class="preco">R$ 20,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- BEBIDAS -->
+      <h3>Bebidas</h3>
+      <div class="cardapio-container">
+        <!-- Suco de Laranja -->
+        <article class="prato-item" data-produto="Suco Natural de Laranja" data-preco="10.00">
+          <img src="./assets/SucoLaranja.png" alt="Suco natural de laranja" />
+          <h3>Suco Natural de Laranja</h3>
+          <p>Elaborado com laranjas frescas prensadas a frio, sem adição de açúcares ou conservantes. Rico em vitamina C e sabor cítrico equilibrado.</p>
+          <span class="preco">R$ 10,00</span>
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <!-- Suco de Morango -->
+        <article class="prato-item" data-produto="Suco Natural de Morango" data-preco="10.00">
+          <img src="./assets/SucoMorango.png" alt="Suco natural de morango" />
+          <h3>Suco Natural de Morango</h3>
+          <p>Preparado com morangos maduros e filtrado para manter a textura leve. Adoçado naturalmente e preservado sem corantes.</p>
+          <span class="preco">R$ 10,00</span>
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <!-- Suco de Maracujá -->
+        <article class="prato-item" data-produto="Suco Natural de Maracujá" data-preco="10.00">
+          <img src="./assets/SucoMaracuja.png" alt="Suco natural de maracujá" />
+          <h3>Suco Natural de Maracujá</h3>
+          <p>Feito com polpa de maracujá fresco, mantendo as sementes para realçar o aroma. Sem conservantes, com acidez natural e sabor intenso.</p>
+          <span class="preco">R$ 10,00</span>
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <!-- Suco de Abacaxi com Hortelã -->
+        <article class="prato-item" data-produto="Suco de Abacaxi com Hortelã" data-preco="10.00">
+          <img src="./assets/SucoAbacaxi.png" alt="Suco natural de abacaxi com folhas de hortelã" />
+          <h3>Suco de Abacaxi com Hortelã</h3>
+          <p>Mistura de abacaxi fresco e folhas de hortelã trituradas, filtrado e finalizado com gotas de limão para preservar a cor e o frescor.</p>
+          <span class="preco">R$ 10,00</span>
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <article class="prato-item">
+          <img src="./assets/ChaGelado.png" alt="Chá gelado artesanal" />
+          <h3>Chá Gelado Artesanal</h3>
+          <p>Infusão de folhas de chá preto, finalizada com suco de limão fresco e adoçada naturalmente. Servido gelado com pedras de gelo para preservar o sabor cítrico.</p>
+          <span class="preco">R$ 15,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+
+        <article class="prato-item">
+          <img src="./assets/Limonada.png" alt="Limonada Artesanal com Hortelã" />
+          <h3>Limonada Artesanal com Hortelã</h3>
+          <p>Base de limão siciliano e folhas de hortelã maceradas, adoçada com mel natural e finalizada com gelo para máxima refrescância.</p>
+          <span class="preco">R$ 15,00</span>
+
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato">
+      <section id="contato">
+  <h2>Envie seu Pedido</h2>
+  <p>
+    Preencha os dados abaixo e entraremos em contato para confirmar a entrega.
+  </p>
+
+  <form id="pedidoForm">
+    <div class="campo-grupo">
+      <label for="nome">Seu Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+    </div>
+    <div class="campo-grupo">
+      <label for="telefone">Seu Telefone:</label>
+      <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone com DDD" required />
+    </div>
+    <div class="campo-grupo">
+      <label for="endereco">Seu Endereço:</label>
+      <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço completo" required />
+    </div>
+
+    <button type="submit">Enviar Pedido por WhatsApp</button>
+  </form>
+</section>
+
+  <footer>
+    <p>
+      &copy; 2026 Saborê - Projeto de Estudo. Todos os direitos reservados.
+    </p>
+  </footer>
+</body>
+
+</html>
